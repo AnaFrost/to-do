@@ -1,0 +1,14 @@
+.header {
+  align-items: flex-end;
+}
+
+.header h1 {
+  flex-grow: 1;
+  font-size: var(--fs-xlg);
+  font-weight: var(--fw-light);
+}
+
+.header h2 {
+  font-size: var(--fs-md);
+  color: var(--colors-target);
+}

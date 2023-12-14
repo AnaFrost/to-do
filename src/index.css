@@ -1,0 +1,22 @@
+:root {
+  /* Typography */
+  --fs-sm: 14px;
+  --fs-md: 18px;
+  --fs-lg: 22px;
+  --fs-xlg: 42px;
+  --fw-light: 300;
+  --fw-normal: 500;
+  --fw-bold: 700;
+}
+
+body {
+  /* Colors */
+  --colors-bg: #292929;
+  --colors-text: #ffe8e8;
+  --colors-dark-text: #292929;
+  --colors-dedicated-text: #600000;
+
+  margin: 0;
+  color: var(--colors-text);
+  background-color: var(--colors-bg);
+}
