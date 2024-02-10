@@ -4,12 +4,12 @@ import { TodoListItem } from '../todoListItem/TodoListItem';
 
 import './todo-list.css';
 
-export const TodoList = ({ todos }) => {
-  const elements = todos.map((item) => {
+export const TodoList = ({ items, onDeleted }) => {
+  const elements = items.map((item) => {
     const { id, ...itemProps } = item;
     return (
       <li key={id} className='list-group-item'>
-        <TodoListItem {...itemProps} />
+        <TodoListItem {...itemProps} onDeleted={() => onDeleted(id)} />
       </li>
     );
   });

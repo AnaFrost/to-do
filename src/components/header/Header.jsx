@@ -2,12 +2,12 @@ import React from 'react';
 
 import './Header.css';
 
-export const Header = () => {
+export const Header = ({ toDo, done }) => {
   return (
     <div className='header d-flex'>
       <h1>Todo list</h1>
       <h2>
-        {} more to do,{} done
+        {toDo} more to do,{done} done
       </h2>
     </div>
   );
